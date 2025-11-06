@@ -222,7 +222,7 @@ def main():
             found.append(u)
             print(f"  [+] WEAK: {u}:{u}")
 
-    print("\n=== SMB Username=Username Check Summary ===")
+    print("\n=Username Check Summary=")
     print(f"DC: {args.dc}")
     print(f"Total users tested: {len(users)}")
     print(f"Weak accounts found: {len(found)}")
