@@ -5,8 +5,6 @@ This tool:
 - Exports sAMAccountName values to `user-export.txt`.
 - Attempts exactly one SMB login per user with password equal to their username (e.g., `boardroom:boardroom`). This is NOT brute forcing.
 
-Only use with explicit authorization.
-
 ### Install
 
 python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
