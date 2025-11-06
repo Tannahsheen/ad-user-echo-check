@@ -14,12 +14,17 @@ python3 -m venv .venv && source .venv/bin/activate && pip install -r requirement
 ### Usage
 
 - LDAP (recommended):
-- 
-python ad_username_check.py --dc dc01.example.com --domain example.com --username adminuser --password 'S3cret!' --ldaps- SMB null session (no creds; only if DC allows anonymous SAMR):
 
-python ad_username_check.py --dc dc01.example.com --domain example.com- Custom base DN and small delay between SMB attempts:
+```python ad_username_check.py --dc dc01.example.com --domain example.com --username adminuser --password 'S3cret!' --ldaps```
+- SMB null session (no creds; only if DC allows anonymous SAMR):
 
-python ad_username_check.py --dc dc01.example.com --domain example.com --base-dn "DC=example,DC=com" --smb-delay 0.05Output file: `user-export.txt`
+```python ad_username_check.py --dc dc01.example.com --domain example.com```
+
+- Custom base DN and small delay between SMB attempts:
+
+```python ad_username_check.py --dc dc01.example.com --domain example.com --base-dn "DC=example,DC=com" --smb-delay 0.05```
+
+Output file: `user-export.txt`
 
 ### Notes
 
