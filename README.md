@@ -3,7 +3,7 @@
 This tool:
 - Enumerates AD users via LDAP (with credentials) or SMB null session.
 - Exports sAMAccountName values to `user-export.txt`.
-- Attempts exactly one SMB login per user with password equal to their username (e.g., `alice:alice`). This is NOT brute forcing.
+- Attempts exactly one SMB login per user with password equal to their username (e.g., `boardroom:boardroom`). This is NOT brute forcing.
 
 Only use with explicit authorization.
 
